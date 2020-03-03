@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lilo.depth.learn.pattern.factory.factorymethod.HaiErProductionFactory</OriginalElement>
+  <nodes>
+    <node x="193.5" y="215.0">com.lilo.depth.learn.pattern.factory.IProduction</node>
+    <node x="378.0" y="325.0">com.lilo.depth.learn.pattern.factory.MeiDiProduction</node>
+    <node x="174.0" y="325.0">com.lilo.depth.learn.pattern.factory.XiaoSwanProduction</node>
+    <node x="0.0" y="430.0">com.lilo.depth.learn.pattern.factory.simplefactory.ProduceFactory</node>
+    <node x="252.0" y="110.0">com.lilo.depth.learn.pattern.factory.factorymethod.HaiErProductionFactory</node>
+    <node x="474.0" y="110.0">com.lilo.depth.learn.pattern.factory.factorymethod.MeiDiProductionFactory</node>
+    <node x="0.0" y="325.0">com.lilo.depth.learn.pattern.factory.HaiErProduction</node>
+    <node x="0.0" y="110.0">com.lilo.depth.learn.pattern.factory.factorymethod.XiaoSwanProductionFactory</node>
+    <node x="254.0" y="0.0">com.lilo.depth.learn.pattern.factory.factorymethod.IProduceFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lilo.depth.learn.pattern.factory.HaiErProduction" target="com.lilo.depth.learn.pattern.factory.IProduction">
+      <point x="0.0" y="-30.0" />
+      <point x="77.0" y="300.0" />
+      <point x="217.66666666666666" y="300.0" />
+      <point x="-48.33333333333334" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.factorymethod.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.factorymethod.IProduceFactory">
+      <point x="0.0" y="-30.0" />
+      <point x="116.0" y="85.0" />
+      <point x="287.0" y="85.0" />
+      <point x="-66.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.factorymethod.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.factorymethod.IProduceFactory">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.MeiDiProduction" target="com.lilo.depth.learn.pattern.factory.IProduction">
+      <point x="0.0" y="-30.0" />
+      <point x="457.0" y="300.0" />
+      <point x="314.33333333333337" y="300.0" />
+      <point x="48.33333333333337" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.XiaoSwanProduction" target="com.lilo.depth.learn.pattern.factory.IProduction">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.factorymethod.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.factorymethod.IProduceFactory">
+      <point x="0.0" y="-30.0" />
+      <point x="577.0" y="85.0" />
+      <point x="419.0" y="85.0" />
+      <point x="66.0" y="30.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="340.0" y="141.0" />
+  <SelectedNodes>
+    <node>com.lilo.depth.learn.pattern.factory.IProduction</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

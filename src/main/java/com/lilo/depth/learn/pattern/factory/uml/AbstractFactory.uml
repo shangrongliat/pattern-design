@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction</OriginalElement>
+  <nodes>
+    <node x="1753.637142857143" y="0.0">com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater</node>
+    <node x="441.03857142857134" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErAirCondition</node>
+    <node x="1199.8871428571429" y="0.0">com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator</node>
+    <node x="1831.0385714285715" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiHeater</node>
+    <node x="682.5385714285713" y="458.0">com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory</node>
+    <node x="260.88714285714286" y="0.0">com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition</node>
+    <node x="1652.0385714285715" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanHeater</node>
+    <node x="2056.8971428571426" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErHeater</node>
+    <node x="1391.0385714285715" y="458.0">com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory</node>
+    <node x="1085.0385714285715" y="458.0">com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory</node>
+    <node x="1142.0385714285715" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiRefrigerator</node>
+    <node x="253.03857142857134" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiAirCondition</node>
+    <node x="1448.0385714285715" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErRefrigerator</node>
+    <node x="836.0385714285713" y="170.0">com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction</node>
+    <node x="624.0385714285713" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanRefrigerator</node>
+    <node x="10.5" y="209.0">com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanAirCondition</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="81.71428571428578" y="-56.0" />
+      <point x="907.2528571428571" y="388.0" />
+      <point x="1641.5385714285715" y="388.0" />
+      <point x="1641.5385714285715" y="140.0" />
+      <point x="1786.4228571428573" y="140.0" />
+      <point x="-43.71428571428578" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="-122.57142857142844" y="-56.0" />
+      <point x="1411.467142857143" y="348.0" />
+      <point x="430.53857142857134" y="348.0" />
+      <point x="430.53857142857134" y="150.0" />
+      <point x="356.6728571428571" y="150.0" />
+      <point x="21.28571428571422" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="81.71428571428567" y="-56.0" />
+      <point x="1309.752857142857" y="408.0" />
+      <point x="1820.5385714285715" y="408.0" />
+      <point x="1820.5385714285715" y="150.0" />
+      <point x="1830.137142857143" y="150.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiRefrigerator" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="0.0" y="-30.0" />
+      <point x="1228.0385714285715" y="120.0" />
+      <point x="1285.8871428571429" y="120.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiAirCondition" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="0.0" y="-30.0" />
+      <point x="336.53857142857134" y="150.0" />
+      <point x="335.38714285714286" y="150.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="40.85714285714289" y="-56.0" />
+      <point x="1574.8957142857143" y="378.0" />
+      <point x="1630.5385714285715" y="378.0" />
+      <point x="1630.5385714285715" y="100.0" />
+      <point x="1359.6014285714286" y="100.0" />
+      <point x="73.71428571428578" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiAirCondition">
+      <point x="-81.71428571428578" y="-56.0" />
+      <point x="1146.3242857142857" y="368.0" />
+      <point x="336.53857142857134" y="368.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErHeater">
+      <point x="122.57142857142844" y="-56.0" />
+      <point x="1656.61" y="438.0" />
+      <point x="2133.3971428571426" y="438.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction">
+      <point x="-40.85714285714289" y="-56.0" />
+      <point x="1187.1814285714286" y="358.0" />
+      <point x="979.0385714285713" y="358.0" />
+      <point x="0.0" y="69.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanHeater" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="0.0" y="-30.0" />
+      <point x="1731.0385714285715" y="150.0" />
+      <point x="1808.2800000000002" y="150.0" />
+      <point x="-21.85714285714289" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErHeater" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="0.0" y="-30.0" />
+      <point x="2133.3971428571426" y="130.0" />
+      <point x="1895.7085714285718" y="130.0" />
+      <point x="65.57142857142856" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanAirCondition" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="0.0" y="-30.0" />
+      <point x="107.0" y="140.0" />
+      <point x="292.8157142857142" y="140.0" />
+      <point x="-42.57142857142867" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="-122.57142857142856" y="-56.0" />
+      <point x="1105.4671428571428" y="378.0" />
+      <point x="242.53857142857134" y="378.0" />
+      <point x="242.53857142857134" y="150.0" />
+      <point x="314.10142857142864" y="150.0" />
+      <point x="-21.28571428571422" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErAirCondition">
+      <point x="-81.71428571428578" y="-56.0" />
+      <point x="1452.3242857142857" y="338.0" />
+      <point x="522.5385714285713" y="338.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanRefrigerator" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="0.0" y="-30.0" />
+      <point x="719.5385714285713" y="90.0" />
+      <point x="1212.172857142857" y="90.0" />
+      <point x="-73.71428571428578" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="-95.33333333333326" y="-69.0" />
+      <point x="883.7052380952381" y="80.0" />
+      <point x="399.24428571428575" y="80.0" />
+      <point x="63.85714285714289" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="95.33333333333337" y="-69.0" />
+      <point x="1074.3719047619047" y="130.0" />
+      <point x="1764.5657142857144" y="130.0" />
+      <point x="-65.57142857142856" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="0.0" y="-69.0" />
+      <point x="979.0385714285713" y="110.0" />
+      <point x="1261.3157142857144" y="110.0" />
+      <point x="-24.57142857142867" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanRefrigerator">
+      <point x="-40.85714285714289" y="-56.0" />
+      <point x="784.6814285714285" y="418.0" />
+      <point x="719.5385714285713" y="418.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanAirCondition">
+      <point x="-81.71428571428578" y="-56.0" />
+      <point x="743.8242857142856" y="428.0" />
+      <point x="107.0" y="428.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiHeater" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="0.0" y="-30.0" />
+      <point x="1907.5385714285715" y="150.0" />
+      <point x="1851.994285714286" y="150.0" />
+      <point x="21.857142857142833" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiHeater">
+      <point x="122.57142857142856" y="-56.0" />
+      <point x="1350.61" y="418.0" />
+      <point x="1907.5385714285715" y="418.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IHeater">
+      <point x="81.71428571428578" y="-56.0" />
+      <point x="1615.7528571428572" y="428.0" />
+      <point x="2046.3971428571426" y="428.0" />
+      <point x="2046.3971428571426" y="140.0" />
+      <point x="1873.8514285714286" y="140.0" />
+      <point x="43.714285714285666" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="-122.57142857142844" y="-56.0" />
+      <point x="702.9671428571429" y="438.0" />
+      <point x="0.0" y="438.0" />
+      <point x="0.0" y="130.0" />
+      <point x="271.53" y="130.0" />
+      <point x="-63.85714285714289" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="0.0" y="-56.0" />
+      <point x="825.5385714285713" y="100.0" />
+      <point x="1236.744285714286" y="100.0" />
+      <point x="-49.14285714285711" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErAirCondition" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IAirCondition">
+      <point x="0.0" y="-30.0" />
+      <point x="522.5385714285713" y="140.0" />
+      <point x="377.95857142857153" y="140.0" />
+      <point x="42.57142857142867" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction">
+      <point x="40.85714285714289" y="-56.0" />
+      <point x="866.3957142857142" y="438.0" />
+      <point x="883.705238095238" y="438.0" />
+      <point x="-95.33333333333337" y="69.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="40.85714285714289" y="-56.0" />
+      <point x="1268.8957142857143" y="378.0" />
+      <point x="1381.0385714285715" y="378.0" />
+      <point x="1381.0385714285715" y="120.0" />
+      <point x="1310.4585714285713" y="120.0" />
+      <point x="24.57142857142844" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.MeiDiRefrigerator">
+      <point x="0.0" y="-56.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErRefrigerator">
+      <point x="0.0" y="-56.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErRefrigerator" target="com.lilo.depth.learn.pattern.factory.abstractfactory.IRefrigerator">
+      <point x="0.0" y="-30.0" />
+      <point x="1534.0385714285715" y="110.0" />
+      <point x="1335.0300000000002" y="110.0" />
+      <point x="49.14285714285711" y="30.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.HaiErProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.AbstractProduction">
+      <point x="-40.85714285714289" y="-56.0" />
+      <point x="1493.1814285714286" y="328.0" />
+      <point x="1074.3719047619047" y="328.0" />
+      <point x="95.33333333333326" y="69.0" />
+    </edge>
+    <edge source="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanProductionFactory" target="com.lilo.depth.learn.pattern.factory.abstractfactory.XiaoSwanHeater">
+      <point x="122.57142857142844" y="-56.0" />
+      <point x="948.1099999999998" y="398.0" />
+      <point x="1731.0385714285715" y="398.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1" x="989.5454545454545" y="305.8181818181818" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
