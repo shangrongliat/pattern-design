@@ -3,6 +3,10 @@ package com.lilo.depth.learn;
 import com.lilo.depth.learn.pattern.singleton.hunger.HungerSingleton;
 import com.lilo.depth.learn.pattern.singleton.hunger.HungerStaticSingleton;
 import com.lilo.depth.learn.pattern.singleton.lazy.LazyInnerClassSingleton;
+import com.lilo.depth.learn.pattern.singleton.register.ContainerSingleton;
+import com.lilo.depth.learn.pattern.singleton.register.EnumSingleton;
+import com.lilo.depth.learn.pattern.singleton.threadlocal.ExectorThread;
+import com.lilo.depth.learn.pattern.singleton.threadlocal.ThreadLocalSingleton;
 import org.junit.Test;
 
 import java.io.FileInputStream;
@@ -14,7 +18,22 @@ import java.lang.reflect.Constructor;
 /**
  * @Author: shangrong
  * @Date: 03/03/20 15:46
- * @Description:
+ * @Description:  单例看似简单，实现起来也非常简单，但是在线程的安全及是否可以被破坏的方面序要多下功夫去进行研究。
+ *
+ * 优点：
+ *  1. 单例模式可以保证内存里只有一个实例
+ *  2. 减少内存开销;避免对资源的多重占用
+ *  3. 设置全局访问点，严格控制访问
+ * 缺点：
+ *  1. 没有接口，扩展困难
+ *  2. 如果要扩展单例对象，只有修改代码，没有其他途径
+ *
+ * 要点：
+ *  1. 私有构造器
+ *  2. 保证线程安全
+ *  3. 延迟加载
+ *  4. 防止序列化和反序列化破坏单例
+ *  5. 防止反射攻击破坏单例
  */
 public class SingletonTest {
 
@@ -85,7 +104,7 @@ public class SingletonTest {
     }
 
     @Test
-    public void serializableSingletonTest(){
+    public void serializableSingletonTest() {
         HungerSingleton h1 = null;
         HungerSingleton h2 = HungerSingleton.getInstance();
 
@@ -95,19 +114,78 @@ public class SingletonTest {
             oos.writeObject(h2);
             oos.flush();
             oos.close();
-//
-//            FileInputStream fis = new FileInputStream("SerializableSingleton.obj");
-//            ObjectInputStream ois = new ObjectInputStream(fis);
-//            h1 = (HungerSingleton) ois.readObject();
-//            ois.close();
-//
-//            System.out.println(h1);
-//            System.out.println(h2);
-//
-//            System.out.println(h1 == h2);
-        }catch (Exception e){
-           e.printStackTrace();
+
+            FileInputStream fis = new FileInputStream("SerializableSingleton.obj");
+            ObjectInputStream ois = new ObjectInputStream(fis);
+            h1 = (HungerSingleton) ois.readObject();
+            ois.close();
+
+            System.out.println(h1);
+            System.out.println(h2);
+
+            System.out.println(h1 == h2);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+
+    }
+
+    /**
+     * 枚举式单例
+     * 由于JDK的机制，该类型的单例保证枚举式单例不可以被反射和序列化反序列再次加载实例
+     */
+    @Test
+    public void enumSingletonTest() {
+        try {
+            ConcurrentExecutor.execute(new ConcurrentExecutor.RunHandler() {
+                @Override
+                public void handler() {
+                    EnumSingleton instance = EnumSingleton.getInstance();
+                    System.out.println(System.currentTimeMillis()+": "+ instance.getData());
+                }
+            }, 10, 5);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 注册式单例
+     */
+    @Test
+    public void containerSingletonTest() {
+        try {
+            ConcurrentExecutor.execute(new ConcurrentExecutor.RunHandler() {
+                @Override
+                public void handler() {
+                    Object bean = ContainerSingleton.getBean("com.lilo.depth.learn.pattern.singleton.register.Pojo");
+                    System.out.println(System.currentTimeMillis()+": "+ bean);
+                }
+            }, 100, 50);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("end....");
+    }
+
+    /**
+     * 线程单例
+     * 不能保证其对象是全局唯一，但是可以保证在单个线程内是唯一的，天生的线程安全
+     * 该单例是将所有对象放到ThreadLocalMap中，为没个线程都提供一个对象，实际上是用线程来进行隔离的。
+     */
+    @Test
+    public void threadLocalSingletonTest(){
+        System.out.println(ThreadLocalSingleton.getInstance());
+        System.out.println(ThreadLocalSingleton.getInstance());
+        System.out.println(ThreadLocalSingleton.getInstance());
+
+        Thread t1 = new Thread(new ExectorThread());
+        Thread t2 = new Thread(new ExectorThread());
+        t1.start();
+        t2.start();
+
+        System.out.println("end......");
 
     }
 
